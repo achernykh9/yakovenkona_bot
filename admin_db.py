@@ -1,5 +1,11 @@
+import os
 import json
-from database import db, User, History
+from pathlib import Path
+from database.db import db
+from database.models import User, History
+
+DB_PATH = Path(os.getenv("DATABASE_PATH", "/app/data/bot.db"))
+DB_PATH.parent.mkdir(parents=True, exist_ok=True)
 
 def show_menu():
     print("\nКоманды:")
