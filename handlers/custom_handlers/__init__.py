@@ -17,3 +17,4 @@ from .calc_area_input import calc_area_input
 from .calc_back import calc_back
 
 from .faq_menu import faq_menu
+from .fallback import save_all_user_messages

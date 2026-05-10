@@ -92,6 +92,12 @@ python admin_db.py
 - результаты расчета.
 
 Административный просмотр базы доступен через `admin_db.py`.
+Команды:
+python admin_db.py count-users (покажет количество пользователей)
+python admin_db.py count-events (покажет количество записей в истории)
+python admin_db.py list-users (выведет последних пользователей)
+python admin_db.py list-events (выведет последние события)
+python admin_db.py history 123456789 (покажет историю конкретного пользователя)
 
 ## FAQ
 

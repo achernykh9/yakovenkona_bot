@@ -2,8 +2,9 @@ from telebot.types import Message
 from loader import bot
 from database import upsert_user, save_user_message
 
+
 @bot.message_handler(content_types=["text"], chat_types=["private"])
-def save_all_user_messages(message):
+def save_all_user_messages(message: Message):
     if message.text.startswith("/"):
         return
 
